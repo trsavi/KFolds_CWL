@@ -1,0 +1,30 @@
+#!/usr/bin/env cwl-runner
+
+cwlVersion: v1.0
+class: CommandLineTool
+baseCommand: bash
+
+
+inputs:
+  script:
+    type: File
+    inputBinding:
+      position: 1
+  code:
+    type: File
+    inputBinding:
+      position: 2
+  dataset:
+    type: File
+    inputBinding: 
+      position: 3
+  index:
+    type: int
+    inputBinding: 
+      position: 4
+  k_value:
+    type: int
+    inputBinding: 
+      position: 5
+
+outputs: []

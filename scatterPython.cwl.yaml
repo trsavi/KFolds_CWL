@@ -1,0 +1,35 @@
+
+cwlVersion: v1.0
+class: Workflow
+
+
+requirements:
+  ScatterFeatureRequirement: {}
+
+
+
+inputs:
+  script: File
+  code: File
+  dataset: File
+  k_value: int
+  index: int[]
+
+steps:
+  algorithm:
+    run: pythonScript.cwl.yaml
+    scatter: index
+    in:
+      script: script
+      code: code
+      dataset: dataset
+      k_value: k_value
+      index: index
+    out: []
+  sum:
+    run: sumPython.yaml
+    in:
+      script: script
+    out: []
+  
+outputs: []

@@ -1,0 +1,11 @@
+script:
+  class: File
+  path: ./startPython.sh
+code:
+  class: File
+  path: ./randomForest.py 
+dataset:
+  class: File
+  path: ./dataset_31_credit-g.csv
+k_value: 7
+index: [1,2,3,4,5,6,7]

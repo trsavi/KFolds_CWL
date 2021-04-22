@@ -1,0 +1,14 @@
+Accuracy: 0.825
+Roc-Auc: 0.727
+Accuracy: 0.727
+Roc-Auc: 0.59
+Accuracy: 0.797
+Roc-Auc: 0.692
+Accuracy: 0.748
+Roc-Auc: 0.642
+Accuracy: 0.741
+Roc-Auc: 0.651
+Accuracy: 0.769
+Roc-Auc: 0.676
+Accuracy: 0.746
+Roc-Auc: 0.641
