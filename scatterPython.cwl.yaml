@@ -6,8 +6,6 @@ class: Workflow
 requirements:
   ScatterFeatureRequirement: {}
 
-
-
 inputs:
   script: File
   code: File

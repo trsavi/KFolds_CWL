@@ -94,7 +94,3 @@ else:
 	result = open('/home/hudson/CWL/KFolds/results.txt', 'a')
 	result.write('Accuracy: {}\n'.format(round(accuracy_score(y_test_enc, predictions),3)))
 	result.write('Roc-Auc: {}\n'.format(round(roc_auc_score(y_test_enc, predictions),3)))
-
-
-
-
