@@ -85,12 +85,16 @@ clf = RandomForestClassifier(max_depth=12, n_estimators = 1000, random_state=0)
 clf.fit(X_train_enc, y_train_enc)
 
 predictions = clf.predict(X_test_enc)
+print('Accuracy: {}\n'.format(round(accuracy_score(y_test_enc, predictions),3)))
+print('Roc-Auc: {}\n'.format(round(roc_auc_score(y_test_enc, predictions),3)))
 
 if index == 1:
-	result = open('/home/hudson/CWL/KFolds/results.txt', 'w')
-	result.write('Accuracy: {}\n'.format(round(accuracy_score(y_test_enc, predictions),3)))
+	result = open('./results.txt', 'w')
+	result.write
+
+
 	result.write('Roc-Auc: {}\n'.format(round(roc_auc_score(y_test_enc, predictions),3)))
 else:
-	result = open('/home/hudson/CWL/KFolds/results.txt', 'a')
+	result = open('./results.txt', 'a')
 	result.write('Accuracy: {}\n'.format(round(accuracy_score(y_test_enc, predictions),3)))
 	result.write('Roc-Auc: {}\n'.format(round(roc_auc_score(y_test_enc, predictions),3)))
